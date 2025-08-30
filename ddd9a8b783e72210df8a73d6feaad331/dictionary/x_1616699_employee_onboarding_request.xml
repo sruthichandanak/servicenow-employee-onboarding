@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="165dac73832b2210df8a73d6feaad3f4" label="Onboarding Request" max_length="40" name="x_1616699_employee_onboarding_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Laptop Requirement" max_length="40" name="laptop_requirement" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="sales" label="Requested Access" max_length="40" name="requested_access" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Microsoft 365" value="microsoft_365"/>
+                <element inactive_on_update="false" label="Salesforce" value="sales"/>
+                <element inactive_on_update="false" label="Jira" value="jira"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Status" max_length="40" name="request_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Submitted" value="submitted"/>
+                <element inactive_on_update="false" label="Draft" value="draft"/>
+                <element inactive_on_update="false" label="Canceled" value="canceled"/>
+                <element inactive_on_update="false" label="Completed" value="completed"/>
+                <element inactive_on_update="false" label="In Progress" value="in_progress"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="it" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Finance" value="finance"/>
+                <element inactive_on_update="false" label="Human Resource" value="human_resource"/>
+                <element inactive_on_update="false" label="IT" value="it"/>
+                <element inactive_on_update="false" label="Marketing" value="marketing"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="New Hire Name" max_length="50" name="new_hire_name" type="string"/>
+    </element>
+</database>
